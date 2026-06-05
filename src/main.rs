@@ -133,6 +133,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
         return Ok(());
     }
 
+    let on_windows = cfg!(target_os = "windows");
+
     let options: Vec<String> = subs
         .iter()
         .clone()
@@ -141,10 +143,30 @@ async fn main() -> Result<(), Box<dyn Error>> {
             format!(
                 "{} {} - [{} Downloads]",
                 match subtitle.language.as_str() {
-                    "pt-BR" => "🇧🇷",
-                    "pt-PT" => "🇵🇹",
-                    "en" => "🇬🇧",
-                    "fr" => "🇫🇷",
+                    "pt-BR" =>
+                        if on_windows {
+                            "[PT-BR]"
+                        } else {
+                            "🇧🇷"
+                        },
+                    "pt-PT" =>
+                        if on_windows {
+                            "[PT]"
+                        } else {
+                            "🇵🇹"
+                        },
+                    "en" =>
+                        if on_windows {
+                            "[EN]"
+                        } else {
+                            "🇬🇧"
+                        },
+                    "fr" =>
+                        if on_windows {
+                            "[FR]"
+                        } else {
+                            "🇫🇷"
+                        },
                     _ => "",
                 },
                 subtitle.name,
