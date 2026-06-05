@@ -28,7 +28,7 @@ cp subget.exe $env:LocalAppData\Microsoft\WindowsApps\
 ```
 
 # Config
-When opening for the first time, the program asks for the API Key and the languages you want to use.
+When opening for the first time, the program asks for the API Key and the languages you want to use. You can get one [here](https://www.opensubtitles.com/consumers) at the OpenSubtitles Website.
 <img width="731" height="162" alt="image" src="https://github.com/user-attachments/assets/b5c8161b-9784-45ac-be36-15f7f7774bbc" />
 
 > [!NOTE]
