@@ -1,0 +1,13 @@
+[package]
+name = "subget"
+version = "1.0.0"
+edition = "2024"
+
+[dependencies]
+dialoguer = { version = "0.12.0", features = ["fuzzy-select"] }
+dirs = "6.0.0"
+indicatif = "0.18.4"
+reqwest = { version = "0.13.4", features = ["json"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.150"
+tokio = { version = "1.52.3", features = ["full"] }
