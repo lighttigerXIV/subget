@@ -19,7 +19,7 @@ After downloading you can open the terminal and move the program to where you se
 
 On Linux:
 ```
-sudo cp linux_subget /usr/local/bin
+sudo cp linux_subget /usr/local/bin/subget
 ```
 
 On windows:
