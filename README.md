@@ -19,16 +19,17 @@ After downloading you can open the terminal and move the program to where you se
 
 On Linux:
 ```
-sudo cp subget /usr/local/bin
+sudo cp linux_subget /usr/local/bin
 ```
 
 On windows:
 ```
-cp subget.exe $env:LocalAppData\Microsoft\WindowsApps\
+cp win_subget.exe $env:LocalAppData\Microsoft\WindowsApps\subget.exe
 ```
 
 # Config
-When opening for the first time, the program asks for the API Key and the languages you want to use. You can get one [here](https://www.opensubtitles.com/consumers) at the OpenSubtitles Website.
+When opening for the first time, the program asks for the API Key and the languages you want to use. You can get a key at the [OpenSubtitles Website](https://www.opensubtitles.com/consumers).
+
 <img width="731" height="162" alt="image" src="https://github.com/user-attachments/assets/b5c8161b-9784-45ac-be36-15f7f7774bbc" />
 
 > [!NOTE]
